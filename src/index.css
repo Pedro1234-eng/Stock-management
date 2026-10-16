@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-theme-yellow: #F9AB00;
+  --color-theme-yellow-bright: #FACC15;
+  --color-theme-blue: #0284C7;
+  --color-theme-blue-light: #38BDF8;
+  --color-theme-orange: #F97316;
+  --color-theme-orange-deep: #EA580C;
+  --color-theme-orange-light: #FB923C;
+  --color-rwanda-blue: #0284C7;
+  --color-rwanda-yellow: #F9AB00;
+  --color-rwanda-orange: #F97316;
+  --color-rwanda-dark: #07151e;
+  --color-rwanda-card: #0d2232;
+  --color-rwanda-surface: #102a3d;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: background-color 0.7s cubic-bezier(0.16, 1, 0.3, 1), color 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+h1, h2, h3, .font-display {
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom Imigongo Pattern Background with Yellow, Blue, and Orange highlights */
+.bg-imigongo-subtle {
+  background-image: 
+    radial-gradient(rgba(249, 171, 0, 0.08) 1px, transparent 0),
+    radial-gradient(rgba(2, 132, 199, 0.06) 1px, transparent 0);
+  background-size: 24px 24px, 48px 48px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Tri-color Imigongo Geometric Ribbon: Blue, Yellow, Orange */
+.imigongo-border {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #0284C7,
+    #0284C7 8px,
+    #F9AB00 8px,
+    #F9AB00 16px,
+    #EA580C 16px,
+    #EA580C 24px,
+    #07151e 24px,
+    #07151e 32px
+  );
+}
+
+.gradient-ybo {
+  background: linear-gradient(135deg, #0284C7 0%, #F9AB00 50%, #F97316 100%);
+}
+
+.text-gradient-ybo {
+  background: linear-gradient(135deg, #38BDF8 0%, #F9AB00 50%, #FB923C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
